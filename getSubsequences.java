@@ -14,8 +14,8 @@ public class getSubsequences {
 		}
 		char cc = str.charAt(0);
 		String ros = str.substring(1);
-		ArrayList<String> myresult = new ArrayList<>();
 		ArrayList<String> recResult = getSS(ros);
+		ArrayList<String> myresult = new ArrayList<>();
 		for(int i=0;i<recResult.size();i++) {
 			myresult.add(recResult.get(i));
 //			myresult.add(cc+recResult.get(i));
