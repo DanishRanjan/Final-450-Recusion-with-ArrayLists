@@ -34,7 +34,7 @@ public static ArrayList<String> getMPWJ(int sr, int sc, int er, int ec){
 			
 		}
 	}
-	for(int move=1;move<=ec-sc;move++) {
+	for(int move=1;move<=ec-sc && move<=er-sr;move++) {
 		ArrayList<String> recResultDiagonal = getMPWJ(sr+move, sc+move, er, ec);
 		for(String rrds : recResultDiagonal) {
 			myResult.add("D"+move+rrds);
